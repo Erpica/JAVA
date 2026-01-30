@@ -58,4 +58,3 @@ JetBrains IDEs
 
 community edition (gratis)
 
-Prueba para github
