@@ -119,4 +119,27 @@ IntelliJ IDEA
 JetBrains IDEs
 
 community edition (gratis)
->>>>>>> 38e79441aeca0708fe072267a39ce7088376463a
+
+# Empezamos:
+Una vez creada la carpeta, iniciado git, primer commit y primer push...
+Hay que decirle a IntelliJ IDEA que la carpeta es la de los ejecutables. Botón derecho en la carpeta, 
+>"Mark Directory Ss"
+> 
+> "Sources Root"
+
+Creamos el fichero HelloWorld.java y en su interior:
+~~~
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Hola Java");
+  }
+}
+~~~
+
+Hecho esto ya podemos ejecutar. 
+Se creará un .class con el mismo nombre que nosotros no vamos a editar nunca. Lo hacemos siempre en el .java.
+
+## Comentarios:
+`// De una línea`
+
+`/* De varias líneas*/`
