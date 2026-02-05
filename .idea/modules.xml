@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/0_Java.iml" filepath="$PROJECT_DIR$/.idea/0_Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic/basic.iml" filepath="$PROJECT_DIR$/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic/c00_helloworld/c00_helloworld.iml" filepath="$PROJECT_DIR$/basic/c00_helloworld/c00_helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic/c01_beginner/c01_beginner.iml" filepath="$PROJECT_DIR$/basic/c01_beginner/c01_beginner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic/c02_operators/c02_operators.iml" filepath="$PROJECT_DIR$/basic/c02_operators/c02_operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic/c03_strings/c03_strings.iml" filepath="$PROJECT_DIR$/basic/c03_strings/c03_strings.iml" />
     </modules>
   </component>
 </project>
