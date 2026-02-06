@@ -20,22 +20,22 @@ public class StringsExercises {
         System.out.println(MySecondString.toUpperCase());
         System.out.println(MySecondString.toLowerCase());
 
-
         System.out.println("5. Comprueba si una cadena de texto contiene una palabra concreta.");
         System.out.println(MySecondString.contains("2"));
 
-
         System.out.println("6. Formatea un string con un entero.");
-        System.out.println("");
+        System.out.format("Hola este es mi string: %s", 2);
 
-        // 7. Elimina los espacios en blanco al principio y final de un string.
+        System.out.println("7. Elimina los espacios en blanco al principio y final de un string.");
+        System.out.println(" Hola, tengo espacios ".trim());
 
-        // 8. Sustituye todos los espacios en blanco de un string por un guiÃ³n (-).
+        System.out.println("8. Sustituye todos los espacios en blanco de un string por un guión (-).");
+        System.out.println(" Hola, tengo espacios ".replace(" ", "-"));
 
-        // 9. Comprueba si dos strings son iguales.
+        System.out.println("9. Comprueba si dos strings son iguales.");
+        System.out.println(MyFirstString.equals(MySecondString));
 
-        // 10. Comprueba si dos strings tienen la misma longitud.
-        System.out.println("");
-        System.out.println("");
+        System.out.println("10. Comprueba si dos strings tienen la misma longitud.");
+        System.out.println(MyFirstString.length() == MySecondString.length());
     }
 }
