@@ -88,8 +88,8 @@ public class LoopsExercises {
         System.out.println("\n10. Crea un programa que calcule el factorial de un número dado.");
         int number = 5;
         int factorial = 1;
-        for (i = number; i >= 1; i++){
-            factorial *= number;
+        for (i = number; i >= 1; i--){
+            factorial *= i;
         }
         System.out.println(factorial);
     }
