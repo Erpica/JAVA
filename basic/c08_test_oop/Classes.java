@@ -1,6 +1,6 @@
-package basic.c08_test_oop;
+package c08_test_oop;
 
-import basic.c08_oop.Person;
+import c08_oop.Person;
 
 public class Classes {
     public static void main(String[] args){

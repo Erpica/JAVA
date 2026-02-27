@@ -1,4 +1,4 @@
-package basic.c08_oop;
+package c08_oop;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +19,10 @@ public class ClassesExercises {
         System.out.println("\n3. Añade un constructor a la clase Book que reciba title y author.");
 
         System.out.println("\n4. Crea una clase Car con atributos brand y model y un método showData().");
-        var myCar = new Car();
-        myCar.brand = "Peugeot";
-        myCar.model = "5008";
-        myCar.ShowData();
+        //var myCar = new Car();
+        //myCar.brand = "Peugeot";
+        //myCar.model = "5008";
+        //myCar.ShowData();
 
         System.out.println("\n5. Crea una clase Student con atributo score y un método que diga si aprobó (mayor o igual a 60).");
         var myStudent = new Student ();

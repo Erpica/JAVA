@@ -1,4 +1,4 @@
-package basic.c08_oop;
+package c08_oop;
 
 public class BankAccount {
     //Crea una clase BankAccount con atributo balance y un método deposit() que sume el saldo.

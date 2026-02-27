@@ -1,4 +1,7 @@
-package basic.c08_oop;
+package c08_oop;
+
+//2. Define una clase Person con los atributos name y age. Luego crea una clase
+//Student que agregue el atributo grade y un método study().""");
 
 public class Person {       // SIEMPRE PUBLIC LA CLASE. no puede ser privada o protected porque entonces no podría acceder desde el programa
     // Atributos

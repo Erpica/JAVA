@@ -1,4 +1,4 @@
-package basic.c08_oop;
+package c08_oop;
 
 public class Book {
     // 1. Crea una clase Book con atributos title y author. Crea un objeto y muestra sus datos.

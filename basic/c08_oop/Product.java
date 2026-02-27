@@ -1,4 +1,4 @@
-package basic.c08_oop;
+package c08_oop;
 
 public class Product {
     // Crea una clase Product y un método que aplique un descuento sobre su precio.

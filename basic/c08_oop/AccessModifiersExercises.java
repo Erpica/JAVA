@@ -1,4 +1,4 @@
-package basic.c08_oop;
+package c08_oop;
 
 public class AccessModifiersExercises {
 

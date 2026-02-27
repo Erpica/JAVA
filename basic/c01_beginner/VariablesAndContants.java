@@ -1,3 +1,5 @@
+package c01_beginner;
+
 public class VariablesAndContants {
     public static void main(String[] args){
         String name = "Pica"; // String es una clase

@@ -1,4 +1,4 @@
-package basic.c08_oop;
+package c08_oop;
 
 public class Student {
 
@@ -11,5 +11,9 @@ public class Student {
             return;
         }
         System.out.println("Has suspendido el examen con un " + this.score);
+    }
+
+    public void study(){
+        System.out.println("Estoy estudiando.");
     }
 }
