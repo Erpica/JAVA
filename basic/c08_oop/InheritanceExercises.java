@@ -1,5 +1,5 @@
 package c08_oop;
-import java.awt.*;
+import c08_oop.InheritanceExercisesAndClases.*;
 
 public class InheritanceExercises {
 
@@ -27,18 +27,18 @@ public class InheritanceExercises {
         System.out.println("""
         \n4. La clase Employee tiene los atributos name y salary. Manager hereda de
         Employee y agrega el atributo department.""");
-        //var theManager = new Manager();
-        // Manager theManager = new Manager(); // => otra manera, mejor
-        //theManager.salary = 1000;
-        //System.out.println(theManager.salary);
+        var theManager = new Manager();
+        // Manager theManager = new Manager(); // => otra manera, mejor?
+        theManager.salary = 1000;
+        System.out.println(theManager.salary);
 
         System.out.println("""
         \n5. Crea una clase abstracta Shape con un método calculateArea(). Luego
         implementa ese método en Circle y Rectangle.""");
-        //var myCircle = new Circle(20);
-        //myCircle.calculateArea();
-        //var myRectangle = new Rectangle(20, 30);
-        //myRectangle.calculateArea();
+        var myCircle = new Circle(20);
+        myCircle.calculateArea();
+        var myRectangle = new Rectangle(20, 30);
+        myRectangle.calculateArea();
 
         System.out.println("""
         \n6. Crea una clase Bird con el método fly(). Luego crea Eagle que sobrescriba

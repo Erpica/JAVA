@@ -1,7 +1,6 @@
 package c08_oop;
 
-import java.util.ArrayList;
-import java.util.List;
+import c08_oop.InheritanceExercisesAndClases.Rectangle;
 
 public class ClassesExercises {
 

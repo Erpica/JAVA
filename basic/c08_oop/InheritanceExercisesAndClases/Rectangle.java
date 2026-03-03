@@ -1,4 +1,4 @@
-package c08_oop;
+package c08_oop.InheritanceExercisesAndClases;
 
 public class Rectangle {
     // 7. Crea una clase Rectangle con métodos para calcular el área y el perímetro.

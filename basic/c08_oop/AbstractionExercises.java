@@ -1,5 +1,6 @@
 package c08_oop;
-
+import c08_oop.AbstractionExercisesAndClases.*;
+import c08_oop.AbstractionExercisesAndClases.Rectangle;
 
 
 public class AbstractionExercises {
@@ -8,10 +9,14 @@ public class AbstractionExercises {
 
         // 1. Crea una clase abstracta Shape con el método calculateArea().
         //  Luego implementa dos subclases: Circle y Rectangle, y haz que cada una calcule su propia área.
-        //var myShape = new Shape();
+        var myCircle = new Circle(5);
+        System.out.println(myCircle.calculateArea());
+        var myRectangle = new Rectangle(5);
+        System.out.println(myRectangle.calculateArea());
 
         // 2. Crea una interfaz Playable con el método play(). Luego implementa esa interfaz en dos clases: Guitar y Piano.
         //  Cada una debe mostrar un mensaje diferente al ejecutarse.
+
 
         // 3. Define una clase abstracta Animal con el método makeSound(). Implementa Dog y Cat para que hagan sonidos distintos.
         //  Crea un array de Animal para mostrar polimorfismo.
