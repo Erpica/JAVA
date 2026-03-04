@@ -1,6 +1,9 @@
 package c08_oop;
 import c08_oop.InheritanceExercisesAndClases.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InheritanceExercises {
 
     public static void main(String[] args) {
@@ -43,31 +46,31 @@ public class InheritanceExercises {
         System.out.println("""
         \n6. Crea una clase Bird con el método fly(). Luego crea Eagle que sobrescriba
         fly() pero también llame al método original con super.fly().""");
-        //var myBird = new Inheritance.Bird();
-        //myBird.fly();
-        //var myEagle = new Eagle();
-        //myEagle.fly();
+        var myBird = new Bird();
+        myBird.fly();
+        var myEagle = new Eagle();
+        myEagle.fly();
 
         System.out.println("""
         \n7. Haz una clase Device con un constructor que imprima "Device created".
         Luego crea Phone que herede de Device y en su constructor imprima "Phone
         ready".""");
-        //var myDevice = new Device();
-        //var myPhone = new Phone();
+        var myDevice = new Device();
+        var myPhone = new Phone();
 
         System.out.println("""
         \n8. Account tiene un saldo y métodos para deposit() y withdraw().
         SavingsAccount hereda y agrega un método addInterest().""");
-        //var myAccount = new Account();
+        var myAccount = new Account();
         //System.out.println(myAccount.balance);
-        //myAccount.deposit(50);
+        myAccount.deposit(50);
         //System.out.println(myAccount.balance);
-        //myAccount.withDraw(25);
+        myAccount.withDraw(25);
         //System.out.println(myAccount.balance);
-        //var mySavingAccount = new SavingsAccount();
-        //mySavingAccount.deposit(100);
-        //mySavingAccount.withDraw(50);
-        //mySavingAccount.addInterest(25);
+        var mySavingAccount = new SavingsAccount();
+        mySavingAccount.deposit(100);
+        mySavingAccount.withDraw(50);
+        mySavingAccount.addInterest(25);
 
 
         System.out.println("""
@@ -75,13 +78,21 @@ public class InheritanceExercises {
         un método describe() sobrescrito.""");
         var myNewCar = new Car("myNewCar");
         myNewCar.describe();
-        //var myBike = new Exercises_Inheritance.Bike();
-        //myBike.move();
+        var myBike = new Bike();
+        myBike.move();
+        var myTruck = new Truck();
+        myTruck.describe();
 
+        System.out.println("""
+        \n10. Crea un ArrayList<Animal> que contenga instancias de Dog, Cat y Bird.
+        Recorre la lista y llama a makeSound().""");
+        var myAnimalArrays = new ArrayList<Animal>(List.of(
+                new Dog(),
+                new Cat()
+        ));
+        for(Animal animal: myAnimalArrays){
+            animal.makeSound();
+        }
 
-
-
-        // 10. Crea un ArrayList<Animal> que contenga instancias de Dog, Cat y Bird.
-        // Recorre la lista y llama a makeSound().
     }
 }

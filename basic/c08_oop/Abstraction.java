@@ -6,7 +6,7 @@ public class Abstraction {
 
         // Abstracción
 
-        // - Clase abstracta
+        // - Clase abstracta: No se pueden crear objetos de ella.
 
         var dog = new Dog();
         dog.sleep();

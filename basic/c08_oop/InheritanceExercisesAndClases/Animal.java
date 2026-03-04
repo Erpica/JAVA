@@ -1,4 +1,4 @@
-package c08_oop;
+package c08_oop.InheritanceExercisesAndClases;
 
 //3. Crea una clase Animal con el método makeSound(). Haz que Dog diga Woof y
 //Cat diga Meow sobrescribiendo ese método.""");

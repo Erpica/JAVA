@@ -1,10 +1,10 @@
 package c08_oop;
 
-public class Polimorphism {
+public class Polymorphism {
     // Distintos objetos responden de manera diferente a la misma función
     public static void main(String[] args){
         // Tipos:
-        // Polimorfismo por herencia (sobreescritura)
+        // Polimorfismo por herencia (sobre escritura)
         var myAnimal = new Animal();
         myAnimal.sound();
 
@@ -18,7 +18,7 @@ public class Polimorphism {
         System.out.println(calculator.sum(2.4, 3.2));
     }
 
-    // Polimorfismo por herencia (sobreescritura)
+    // Polimorfismo por herencia (sobre escritura)
     public static class Animal {
         public void sound(){
             System.out.println("Algún sonido");

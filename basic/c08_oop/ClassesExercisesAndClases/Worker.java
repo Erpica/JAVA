@@ -1,4 +1,4 @@
-package c08_oop;
+package c08_oop.ClassesExercisesAndClases;
 
 public class Worker  {
     String name;

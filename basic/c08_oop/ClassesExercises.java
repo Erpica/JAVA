@@ -1,6 +1,8 @@
 package c08_oop;
+import c08_oop.ClassesExercisesAndClases.*;
+import c08_oop.InheritanceExercisesAndClases.Dog;
 
-import c08_oop.InheritanceExercisesAndClases.Rectangle;
+import java.util.ArrayList;
 
 public class ClassesExercises {
 
@@ -41,8 +43,6 @@ public class ClassesExercises {
         myRectangle.base = 2;
         myRectangle.height = 4;
         myRectangle.calculateArea();
-        myRectangle.sideTwo = 5;
-        myRectangle.sideThree = 3;
         myRectangle.calculatePerimeter();
 
         System.out.println("\n8. Crea una clase Worker que reciba nombre y salario, y un método para mostrar su salario.");
@@ -50,24 +50,24 @@ public class ClassesExercises {
         oneWorker.showSalary();
 
         System.out.println("\n9. Crea varios objetos Person y guárdalos en un ArrayList.");
-        //var onePerson = new Person("Antonio", 46);
-        //var otherPerson = new Person("Irene", 43);
-        //var andOtherPerson = new Person("Anto", 10);
-        //var myArrayOfPersons = new ArrayList<Person>();
-        //myArrayOfPersons.add(onePerson);
-        //myArrayOfPersons.add(otherPerson);
-        //myArrayOfPersons.add(andOtherPerson);
+        var onePerson = new Person("Antonio", 46, "123456789A");
+        var otherPerson = new Person("Irene", 43, "987654321B");
+        var andOtherPerson = new Person("Anto", 10, "000000000c");
+        var myArrayOfPersons = new ArrayList<Person>();
+        myArrayOfPersons.add(onePerson);
+        myArrayOfPersons.add(otherPerson);
+        myArrayOfPersons.add(andOtherPerson);
         //          O DE OTRA FORMA MUCHO MEJOR:
 /*        var myArrayOfPersons = new ArrayList<Person>(List.of(
                 new Person("Antonio", 46),
                 new Person("Irene", 43),
                 new Person("Anto", 10)
         ));
-
+*/
         for (Person person: myArrayOfPersons){
             person.sayHello();
         }
-*/
+
         System.out.println("\n10. Crea una clase  Crea una clase Product y un método que aplique un descuento sobre su precio. y un método que aplique un descuento sobre su precio.");
         var myProduct = new Product();
         myProduct.price = 200;

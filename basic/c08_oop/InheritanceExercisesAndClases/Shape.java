@@ -1,8 +1,8 @@
 package c08_oop.InheritanceExercisesAndClases;
 
-// 1. Crea una clase abstracta Shape con el método calculateArea().
-//  Luego implementa dos subclases: Circle y Rectangle, y haz que cada una calcule su propia área.
+// 5. Crea una clase abstracta Shape con un método calculateArea(). Luego
+//        implementa ese método en Circle y Rectangle.
 
 public abstract class Shape {
-    public abstract double calculateArea();
+    public abstract void calculateArea();
 }
