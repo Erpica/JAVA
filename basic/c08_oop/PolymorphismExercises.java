@@ -14,9 +14,9 @@ public class PolymorphismExercises {
         desde una lista de Animal.
         """);
         var animalList = new ArrayList<Animal>(List.of(
-                new Dog(),
-                new Cat(),
-                new Cow()
+                new Dog("perro"),
+                new Cat("gato"),
+                new Cow("vaca")
         ));
         for (Animal animal : animalList){
             animal.makeSound();
@@ -37,28 +37,66 @@ public class PolymorphismExercises {
             shape.calculateArea();
         }
 
+        System.out.println("""
+        \n3. Crea una clase Printer con varios métodos print() sobrecargados que
+        acepten diferentes tipos de parámetros (String, int, double). Llama a cada
+        uno desde main.
+        """);
+        var thePrinter = new Printer();
+        thePrinter.print("hola");
+        thePrinter.print(2);
+        thePrinter.print(2.5);
 
-        // 3. Crea una clase Printer con varios métodos print() sobrecargados que
-        // acepten diferentes tipos de parámetros (String, int, double). Llama a cada
-        // uno desde main.
-
-        // 4. Crea una clase Greeter con dos métodos greet(): uno que salude con
+        System.out.println("""
+        \n4. Crea una clase Greeter con dos métodos greet(): uno que salude con
         // "Hello", y otro que reciba un nombre y salude con "Hello, [nombre]".
+        """);
+        var theGreat = new Greeter();
+        theGreat.greet();
+        theGreat.greet("Anto");
 
-        // 5. Crea una clase Vehicle con un método start(). Luego crea Car, Bike y Truck
+        System.out.println("""
+        \n5. Crea una clase Vehicle con un método start(). Luego crea Car, Bike y Truck
         // que sobrescriban ese método. Recorre una lista ArrayList<Vehicle> para llamar
         // a start() en cada uno.
+        """);
+        var myVehiclesArray = new ArrayList<Vehicle>(List.of(
+                new Car(),
+                new Bike(),
+                new Truck()
+        ));
+        for (Vehicle vehicle : myVehiclesArray){
+            vehicle.start();
+        }
 
-        // 6. Crea una clase Notification con método send(), y subclases
+        System.out.println("""
+        \n6. Crea una clase Notification con método send(), y subclases
         // EmailNotification, SMSNotification. Luego crea una función
         // sendNotification(Notification n) que reciba cualquier tipo y lo ejecute.
+        """);
+        var oneNotification = new Notification("Notificación simple");
+        oneNotification.send();
+        var myEmailNotification = new EmailNotification("Al mail");
+        myEmailNotification.sendNotification(myEmailNotification);
+        var mySMSNotification = new SMSNotification("Por SMS");
+        mySMSNotification.sendNotification(mySMSNotification);
 
-        // 7. Crea una función showAnimalType(Animal animal) que imprima el tipo de
-        // animal. Pasa diferentes subclases (Dog, Cat, Horse) para que cada una imprima
-        // su tipo con su propio getType() sobrescrito.
+        System.out.println("""
+        \n7. Crea una función showAnimalType(Animal animal) que imprima el tipo de
+        animal. Pasa diferentes subclases (Dog, Cat, Horse) para que cada una imprima
+        su tipo con su propio getType() sobrescrito.
+        """);
+        var myCat = new Cat("gatito");
+        myCat.showAnimalType(myCat);
 
-        // 8. Crea una clase Converter con métodos convert(int), convert(double), y
-        // convert(String) que devuelvan diferentes formatos de texto.
+        System.out.println("""
+        \n8. Crea una clase Converter con métodos convert(int), convert(double), y
+        convert(String) que devuelvan diferentes formatos de texto.
+        """);
+        var myConvert = new Converter();
+        System.out.println(myConvert.convert(3));
+        System.out.println(myConvert.convert(3.2));
+        System.out.println(myConvert.convert("3"));
 
         // 9. Crea una clase Product con el método getPrice(). Luego, Book y Electronic
         // deben sobrescribirlo con su propia lógica de descuento. Recorre una lista de

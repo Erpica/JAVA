@@ -4,9 +4,21 @@ package c08_oop.PolymorphismExercisesAndClases;
 // Cat y Cow que sobrescriban ese método con sonidos diferentes. Llama al método
 // desde una lista de Animal.
 
+// 7. Crea una función showAnimalType(Animal animal) que imprima el tipo de
+// animal. Pasa diferentes subclases (Dog, Cat, Horse) para que cada una imprima
+// su tipo con su propio getType() sobrescrito.
+
 public class Cow extends Animal{
+    public Cow(String name){
+        super(name);
+    }
+
     public void makeSound(){
         System.out.println("Muuu.");
+    }
+
+    public String getType(){
+        return "Vaca";
     }
 
 }
