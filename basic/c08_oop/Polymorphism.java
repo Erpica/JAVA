@@ -1,7 +1,7 @@
 package c08_oop;
 
 public class Polymorphism {
-    // Distintos objetos responden de manera diferente a la misma función
+    // Distintos objetos responden de manera diferente a la misma función (al mismo mensaje, al mismo método, a la misma operación...)
     public static void main(String[] args){
         // Tipos:
         // Polimorfismo por herencia (sobre escritura)
@@ -11,11 +11,11 @@ public class Polymorphism {
         var dog = new Dog();
         dog.sound();
 
-        // Polimorfismo por sobrecarga (sobrecarga de métodos)
+        // Polimorfismo por sobrecarga (sobrecarga de métodos: mismo nombre y distintos parámetros)
         var calculator = new Calculator();
         System.out.println(calculator.sum(2, 3));
         System.out.println(calculator.sum(2, 3, 6));
-        System.out.println(calculator.sum(2.4, 3.2));
+        System.out.println(calculator.sum(2.4, 3));
     }
 
     // Polimorfismo por herencia (sobre escritura)

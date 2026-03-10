@@ -1,6 +1,6 @@
 package c08_oop;
 
-public class Product {
+public class ProductOld {
     // Crea una clase Product y un método que aplique un descuento sobre su precio.
     double price;
     //double discount;

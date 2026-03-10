@@ -4,16 +4,13 @@ package c08_oop.PolymorphismExercisesAndClases;
 // deben sobrescribirlo con su propia lógica de descuento. Recorre una lista de
 // Product e imprime el precio final de cada uno.
 
-public class Product {
-    double price;
-    String name;
-
-    public Product(String name, double price){
-        this.price = price;
-        this.name=name;
+public class Book extends Product{
+    public Book(String name, double price){
+        super(name, price);
     }
 
     public double getPrice(){
+        price = price * 0.25;
         return price;
     }
 }

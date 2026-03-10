@@ -6,7 +6,8 @@ public class Abstraction {
 
         // Abstracción
 
-        // - Clase abstracta: No se pueden crear objetos de ella.
+        // - Clase abstracta: No se pueden crear objetos de ella, es decir, no se puede instanciar.
+        // También se puede usar para obligar a las subclases a definir un método, por ejemplo: "public abstract void sound();".
 
         var dog = new Dog();
         dog.sleep();
@@ -17,6 +18,7 @@ public class Abstraction {
         cat.sound();
 
         // - Interface
+        // Solo definimos los métodos a nivel declaración, sin la implementación.
     }
 
     // - Clase abstracta

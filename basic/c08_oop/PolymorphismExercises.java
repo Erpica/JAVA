@@ -1,6 +1,8 @@
 package c08_oop;
 
 import c08_oop.PolymorphismExercisesAndClases.*;
+import c08_oop.PolymorphismExercisesAndClases.Character;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -98,12 +100,35 @@ public class PolymorphismExercises {
         System.out.println(myConvert.convert(3.2));
         System.out.println(myConvert.convert("3"));
 
-        // 9. Crea una clase Product con el método getPrice(). Luego, Book y Electronic
-        // deben sobrescribirlo con su propia lógica de descuento. Recorre una lista de
-        // Product e imprime el precio final de cada uno.
 
-        // 10. Crea una clase Character con método attack(). Luego crea subclases
-        // Warrior, Archer, Mage con ataques diferentes. En main, crea un array de
-        // Character y llama a attack() para cada uno.
+        System.out.println("""
+        \n9. Crea una clase Product con el método getPrice(). Luego, Book y Electronic
+        deben sobrescribirlo con su propia lógica de descuento. Recorre una lista de
+        Product e imprime el precio final de cada uno.
+        """);
+        var myProductsArray = new ArrayList<Product>(List.of(
+                new Product("Libro 1", 40),
+                new Product("Electronico 2", 20)
+        )
+
+        );
+        for (Product product : myProductsArray){
+            System.out.println(product.getPrice());
+        }
+
+        System.out.println("""
+        \n10. Crea una clase Character con método attack(). Luego crea subclases
+        Warrior, Archer, Mage con ataques diferentes. En main, crea un array de
+        Character y llama a attack() para cada uno.
+        """);
+
+        var myCharactersArray = new ArrayList<Character>(List.of(
+                new Warrior(),
+                new Archer(),
+                new Mage()
+        ));
+        for (Character character : myCharactersArray){
+            character.attack();
+        }
     }
 }

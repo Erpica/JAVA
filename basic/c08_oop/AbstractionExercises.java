@@ -2,24 +2,44 @@ package c08_oop;
 import c08_oop.AbstractionExercisesAndClases.*;
 import c08_oop.AbstractionExercisesAndClases.Rectangle;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class AbstractionExercises {
 
     public static void main(String[] args) {
-
-        // 1. Crea una clase abstracta Shape con el método calculateArea().
-        //  Luego implementa dos subclases: Circle y Rectangle, y haz que cada una calcule su propia área.
+        System.out.println("""
+        1. Crea una clase abstracta Shape con el método calculateArea().
+        Luego implementa dos subclases: Circle y Rectangle, y haz que cada una calcule su propia área.
+        """);
         var myCircle = new Circle(5);
         System.out.println(myCircle.calculateArea());
         var myRectangle = new Rectangle(5);
         System.out.println(myRectangle.calculateArea());
 
-        // 2. Crea una interfaz Playable con el método play(). Luego implementa esa interfaz en dos clases: Guitar y Piano.
-        //  Cada una debe mostrar un mensaje diferente al ejecutarse.
+        System.out.println("""
+        2. Crea una interfaz Playable con el método play(). Luego implementa esa interfaz en dos clases: Guitar y Piano.
+        Cada una debe mostrar un mensaje diferente al ejecutarse.
+        """);
+        var myGuitar = new Guitar();
+        myGuitar.play();
+        var myPiano = new Piano();
+        myPiano.play();
+
+        System.out.println("""
+        3. Define una clase abstracta Animal con el método makeSound(). Implementa Dog y Cat para que hagan sonidos distintos.
+        Crea un array de Animal para mostrar polimorfismo.
+        """);
+        var animalArray = new ArrayList<Animal>(List.of(
+           new Dog(),
+           new Cat()
+        ));
+        for (Animal animal : animalArray){
+            animal.makeSound();
+        }
 
 
-        // 3. Define una clase abstracta Animal con el método makeSound(). Implementa Dog y Cat para que hagan sonidos distintos.
-        //  Crea un array de Animal para mostrar polimorfismo.
 
         // 4. Crea una interfaz Drawable. Implementa las clases Circle, Square, y Triangle que muestren cómo se dibuja cada figura usando draw().
 

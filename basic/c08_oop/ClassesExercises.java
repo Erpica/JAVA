@@ -69,7 +69,7 @@ public class ClassesExercises {
         }
 
         System.out.println("\n10. Crea una clase  Crea una clase Product y un método que aplique un descuento sobre su precio. y un método que aplique un descuento sobre su precio.");
-        var myProduct = new Product();
+        var myProduct = new ProductOld();
         myProduct.price = 200;
         System.out.println("El artículo se te queda en " + myProduct.applyDiscount(25) + " €");
 
