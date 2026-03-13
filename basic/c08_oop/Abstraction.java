@@ -19,6 +19,7 @@ public class Abstraction {
 
         // - Interface
         // Solo definimos los métodos a nivel declaración, sin la implementación.
+        // La clase que implementa a la interface está obligada a sobreescribir TODOS los métodos de la interface.
     }
 
     // - Clase abstracta

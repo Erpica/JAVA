@@ -39,21 +39,58 @@ public class AbstractionExercises {
             animal.makeSound();
         }
 
+        System.out.println("4. Crea una interfaz Drawable. Implementa las clases Circle, Square, y Triangle que muestren cómo se dibuja cada figura usando draw().");
+        myCircle.draw();
+        var mySquare = new Square();
+        mySquare.draw();
+        var myTriangle = new Triangle();
+        myTriangle.draw();
+
+        System.out.println("""
+        5. Crea una clase abstracta Employee con un método calculateSalary(). Implementa FullTimeEmployee y PartTimeEmployee con lógica
+        diferente para calcular el salario.
+        """);
+        var fullTime = new FullTimeEmployee(50);
+        var partTime = new PartTimeEmployee(20);
+        System.out.println(fullTime.calculateSalary());
+        System.out.println(partTime.calculateSalary());
+
+        System.out.println("6. Crea una interfaz Movable con el método move(). " +
+                "Haz que las clases Car y Robot implementen ese método con comportamientos diferentes.");
+        var myCar = new Car();
+        myCar.move();
+        var myRobot = new Robot();
+        myRobot.move();
+
+        System.out.println("7. Crea una clase abstracta Appliance con método turnOn() y turnOff(). " +
+                        "Implementa TV y WashingMachine con mensajes diferentes al encender y apagar.");
+        var myTv = new TV();
+        System.out.println(myTv.status());
+        myTv.turnOn();
+        System.out.println(myTv.status());
+
+        System.out.println("8. Crea dos interfaces Flyable y Swimmable. Crea una clase Duck que implemente " +
+                        "ambas interfaces y muestre cómo puede volar y nadar.");
+        var myDuck = new Duck();
+        myDuck.fly();
+        myDuck.swim();
 
 
-        // 4. Crea una interfaz Drawable. Implementa las clases Circle, Square, y Triangle que muestren cómo se dibuja cada figura usando draw().
+        System.out.println("9. Crea una clase abstracta Document con el método print(). " +
+                        "Luego crea PDFDocument y WordDocument, cada una con su forma de imprimir.");
+        var myPDFDocument = new PDFDocument();
+        myPDFDocument.print();
+        var myWordDocument = new WordDocument();
+        myWordDocument.print();
 
-        // 5. Crea una clase abstracta Employee con un método calculateSalary(). Implementa FullTimeEmployee y PartTimeEmployee con lógica
-        //  diferente para calcular el salario.
 
-        // 6. Crea una interfaz Movable con el método move(). Haz que las clases Car y Robot implementen ese método con comportamientos diferentes.
+        System.out.println("10. Crea una interfaz Payable con el método pay(). Luego implementa las clases Invoice y EmployeePayment," +
+          "cada una mostrando un mensaje de pago diferente.");
+        var theInvoice = new Invoice();
+        var theEmployeePayment = new EmployeePayment();
+        theInvoice.pay();
+        theEmployeePayment.pay();
 
-        // 7. Crea una clase abstracta Appliance con método turnOn() y turnOff(). Implementa TV y WashingMachine con mensajes diferentes al encender y apagar.
 
-        // 8. Crea dos interfaces Flyable y Swimmable. Crea una clase Duck que implemente ambas interfaces y muestre cómo puede volar y nadar.
-
-        // 9. Crea una clase abstracta Document con el método print(). Luego crea PDFDocument y WordDocument, cada una con su forma de imprimir.
-
-        // 10. Crea una interfaz Payable con el método pay(). Luego implementa las clases Invoice y EmployeePayment, cada una mostrando un mensaje de pago diferente.
     }
 }

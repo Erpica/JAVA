@@ -1,0 +1,15 @@
+package c08_oop.AbstractionExercisesAndClases;
+
+// 8. Crea dos interfaces Flyable y Swimmable. Crea una clase Duck que implemente ambas interfaces y muestre cómo puede volar y nadar.
+
+public class Duck implements Flyable, Swimmable{
+    @Override
+    public void swim() {
+        System.out.println("Así puede nadar un pato");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Así puede volar un pato");
+    }
+}
