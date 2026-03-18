@@ -6,7 +6,7 @@ public class Exceptions {
 
         // try catch
         try {
-            var result = 10 / 5;
+            var result = 10 / 0;
             System.out.println(result);
 
         } catch(ArithmeticException e){ // Hay que tener muy claro que solo puede ocurrir este tipo de excepción, si no => Exception (general)
